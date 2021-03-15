@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movementcontroller : MonoBehaviour
+public class controller : MonoBehaviour
 {
-
+    // Start is called before the first frame update
     public float speed, rotationSpeed;
 
     // Start is called before the first frame update
@@ -28,6 +28,5 @@ public class Movementcontroller : MonoBehaviour
 
         // Rotate around our y-axis
         transform.Rotate(0, rotation, 0);
-
     }
 }
