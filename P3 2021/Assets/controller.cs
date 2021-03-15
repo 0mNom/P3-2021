@@ -12,6 +12,7 @@ public class controller : MonoBehaviour
     {
         speed = 10f;
         rotationSpeed = 100f;
+        
     }
 
     // Update is called once per frame
