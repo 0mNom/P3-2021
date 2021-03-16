@@ -19,9 +19,25 @@ public class @InputManager : IInputActionCollection, IDisposable
             ""id"": ""666139cf-988a-4fae-ac1c-f6f5852315fd"",
             ""actions"": [
                 {
-                    ""name"": ""Movement WASD"",
+                    ""name"": ""Move"",
                     ""type"": ""Button"",
                     ""id"": ""884eccb3-3028-43e2-855a-aee5f4fec95e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""AD"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""136d5a3d-fd7a-4216-ae3b-70aa3b7021b6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""53ff7878-3249-42b3-9df6-1a19007db41b"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -29,46 +45,13 @@ public class @InputManager : IInputActionCollection, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""LeftRight"",
-                    ""id"": ""0288e320-4b8f-4903-b26e-ea85e26ce7c0"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""9c1725cf-4f7e-40b7-8ee5-c71d46b8eedf"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""266ecb3a-2be5-4dd7-9bb0-dfba51dc3ea3"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": ""UpDown"",
                     ""id"": ""4958986a-0b3a-45fe-8e5c-4cd891873bdf"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Movement WASD"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -79,7 +62,7 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -90,62 +73,7 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""ArrowKeys"",
-                    ""id"": ""e8685dca-aa03-4e7f-9e61-486303fd0b86"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""58db3ca8-664d-421f-a2b1-fbde9a19777f"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""a278ac48-cf13-4f97-bbde-90f25c03173d"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""7579fc18-872c-486c-8b80-029926e47907"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""12be5763-3a44-484c-8c89-7c80e7b990f0"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -156,7 +84,7 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Movement WASD"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -167,7 +95,7 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -178,9 +106,53 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement WASD"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""LEFT RIGHT WASD"",
+                    ""id"": ""c8c6ff0e-7912-4599-8fb2-da4d40781633"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AD"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""969504fe-ba29-479b-a35e-cdea2902a2a2"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""AD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""85aa4326-3082-4d67-84ac-c67ca42215df"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""AD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dccee53a-1ca8-402a-b49d-e87733ea492d"",
+                    ""path"": ""<Keyboard>/#(-)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -201,7 +173,9 @@ public class @InputManager : IInputActionCollection, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_MovementWASD = m_Player.FindAction("Movement WASD", throwIfNotFound: true);
+        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        m_Player_AD = m_Player.FindAction("AD", throwIfNotFound: true);
+        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,12 +225,16 @@ public class @InputManager : IInputActionCollection, IDisposable
     // Player
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
-    private readonly InputAction m_Player_MovementWASD;
+    private readonly InputAction m_Player_Move;
+    private readonly InputAction m_Player_AD;
+    private readonly InputAction m_Player_Shoot;
     public struct PlayerActions
     {
         private @InputManager m_Wrapper;
         public PlayerActions(@InputManager wrapper) { m_Wrapper = wrapper; }
-        public InputAction @MovementWASD => m_Wrapper.m_Player_MovementWASD;
+        public InputAction @Move => m_Wrapper.m_Player_Move;
+        public InputAction @AD => m_Wrapper.m_Player_AD;
+        public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -266,16 +244,28 @@ public class @InputManager : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
             {
-                @MovementWASD.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovementWASD;
-                @MovementWASD.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovementWASD;
-                @MovementWASD.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovementWASD;
+                @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @AD.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAD;
+                @AD.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAD;
+                @AD.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAD;
+                @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @MovementWASD.started += instance.OnMovementWASD;
-                @MovementWASD.performed += instance.OnMovementWASD;
-                @MovementWASD.canceled += instance.OnMovementWASD;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @AD.started += instance.OnAD;
+                @AD.performed += instance.OnAD;
+                @AD.canceled += instance.OnAD;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
             }
         }
     }
@@ -291,6 +281,8 @@ public class @InputManager : IInputActionCollection, IDisposable
     }
     public interface IPlayerActions
     {
-        void OnMovementWASD(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
+        void OnAD(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
     }
 }

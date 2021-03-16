@@ -6,9 +6,25 @@
             "id": "666139cf-988a-4fae-ac1c-f6f5852315fd",
             "actions": [
                 {
-                    "name": "Movement WASD",
+                    "name": "Move",
                     "type": "Button",
                     "id": "884eccb3-3028-43e2-855a-aee5f4fec95e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AD",
+                    "type": "PassThrough",
+                    "id": "136d5a3d-fd7a-4216-ae3b-70aa3b7021b6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "53ff7878-3249-42b3-9df6-1a19007db41b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -16,46 +32,13 @@
             ],
             "bindings": [
                 {
-                    "name": "LeftRight",
-                    "id": "0288e320-4b8f-4903-b26e-ea85e26ce7c0",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement WASD",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "9c1725cf-4f7e-40b7-8ee5-c71d46b8eedf",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "266ecb3a-2be5-4dd7-9bb0-dfba51dc3ea3",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "UpDown",
                     "id": "4958986a-0b3a-45fe-8e5c-4cd891873bdf",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement WASD",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -66,7 +49,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Movement WASD",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -77,62 +60,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Movement WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "ArrowKeys",
-                    "id": "e8685dca-aa03-4e7f-9e61-486303fd0b86",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement WASD",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "58db3ca8-664d-421f-a2b1-fbde9a19777f",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "a278ac48-cf13-4f97-bbde-90f25c03173d",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "7579fc18-872c-486c-8b80-029926e47907",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "12be5763-3a44-484c-8c89-7c80e7b990f0",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement WASD",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -143,7 +71,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement WASD",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -154,7 +82,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Movement WASD",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -165,9 +93,53 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Movement WASD",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "LEFT RIGHT WASD",
+                    "id": "c8c6ff0e-7912-4599-8fb2-da4d40781633",
+                    "path": "1DAxis",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AD",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "969504fe-ba29-479b-a35e-cdea2902a2a2",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "AD",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "85aa4326-3082-4d67-84ac-c67ca42215df",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "AD",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "dccee53a-1ca8-402a-b49d-e87733ea492d",
+                    "path": "<Keyboard>/#(-)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
