@@ -41,7 +41,7 @@ InputManager:
     m_Name: upDown
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: '[0]'
     positiveButton: right ctrl
     altNegativeButton: 
     altPositiveButton: mouse 0
