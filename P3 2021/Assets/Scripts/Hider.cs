@@ -5,9 +5,11 @@ using UnityEngine;
 public class Hider : MonoBehaviour
 {
     public Material[] material;
+    public Renderer rend;
 
-    public Renderer rend; 
 
+    public Animator anim;
+    public bool hid = false; 
 
     void Start()
     {
@@ -23,7 +25,7 @@ public class Hider : MonoBehaviour
          
         Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),out hitdata, 5f);
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward)*5, Color.green);
-        Debug.Log(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f));
+       // Debug.Log(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f));
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f))
         {
@@ -43,6 +45,16 @@ public class Hider : MonoBehaviour
     public void hide()
     {
         Debug.Log("i'm hidinnngggg");
+        hid = !hid;
+
+        if (hid)
+        {
+            anim.SetTrigger("out");
+        } else if (!hid)
+        {
+            anim.SetTrigger("in");
+        }
+        
     }
 
     /*private void OnDrawGizmos()
