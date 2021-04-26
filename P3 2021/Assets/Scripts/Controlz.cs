@@ -45,10 +45,27 @@ public class Controlz : MonoBehaviour
     IEnumerator flot()
     {
         floot = false;
-        transform.Translate(new Vector3(0, 1, 0));
-        yield return new WaitForSeconds(.5f);
-        transform.Translate(new Vector3(0, -1, 0));
-        yield return new WaitForSeconds(.5f);
+        transform.Translate(new Vector3(0, .1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, .1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, .1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, .1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, .1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, -.1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, -.1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, -.1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, -.1f, 0));
+        yield return new WaitForSeconds(.1f);
+        transform.Translate(new Vector3(0, -.1f, 0));
+        yield return new WaitForSeconds(.1f);
+        
         floot = true;
     }
 }
