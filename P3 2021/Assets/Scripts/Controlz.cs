@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Controlz : MonoBehaviour
 {
+    public bool floot;
     public float speed, rotationSpeed;
 
     // Start is called before the first frame update
@@ -30,7 +32,23 @@ public class Controlz : MonoBehaviour
         // Rotate around our y-axis
         transform.Rotate(0, rotation, 0);
 
-        
+        Flotation();
 
+    }
+
+   public void Flotation()
+    {
+        if (floot) StartCoroutine("flot");
+    }
+
+
+    IEnumerator flot()
+    {
+        floot = false;
+        transform.Translate(new Vector3(0, 1, 0));
+        yield return new WaitForSeconds(.5f);
+        transform.Translate(new Vector3(0, -1, 0));
+        yield return new WaitForSeconds(.5f);
+        floot = true;
     }
 }
