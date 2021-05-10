@@ -7,6 +7,7 @@ public class Controlz : MonoBehaviour
 {
     public bool floot;
     public float speed, rotationSpeed;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +27,19 @@ public class Controlz : MonoBehaviour
         rotation *= Time.deltaTime;
         upDown *= Time.deltaTime;
 
+        Vector3 m_Input = new Vector3 (0,upDown,translation);
+
+
+
         // Move translation along the object's z-axis
         transform.Translate(0, upDown, translation);
+        //rb.MovePosition(transform.position + m_Input * Time.deltaTime * speed);
 
         // Rotate around our y-axis
         transform.Rotate(0, rotation, 0);
+        //rb.MoveRotation(0, rotation, 0);
 
-        Flotation();
+       // Flotation();
 
     }
 
