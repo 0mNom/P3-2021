@@ -33,13 +33,13 @@ public class Controlz : MonoBehaviour
 
         // Move translation along the object's z-axis
         transform.Translate(0, upDown, translation);
-        //rb.MovePosition(transform.position + m_Input * Time.deltaTime * speed);
+      //  rb.MovePosition(transform.position + m_Input * Time.deltaTime * speed);
 
         // Rotate around our y-axis
         transform.Rotate(0, rotation, 0);
-        //rb.MoveRotation(0, rotation, 0);
+       // rb.MoveRotation(0, rotation, 0);
 
-       // Flotation();
+        Flotation();
 
     }
 
