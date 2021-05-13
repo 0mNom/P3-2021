@@ -689,6 +689,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 779b5eb77fb3e434e8f4d559665214c2, type: 2}
   - {fileID: 2100000, guid: 79c1c4848cb9f4c9180094297131faf1, type: 2}
   rend: {fileID: 8150660582360099430}
+  sound: {fileID: 0}
   anim: {fileID: 811085585}
   hid: 0
 --- !u!114 &1639563602
@@ -706,6 +707,7 @@ MonoBehaviour:
   floot: 1
   speed: 10
   rotationSpeed: 100
+  rb: {fileID: 0}
 --- !u!1 &3240658250972977535
 GameObject:
   m_ObjectHideFlags: 0

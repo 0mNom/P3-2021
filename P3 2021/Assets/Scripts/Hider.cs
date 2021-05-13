@@ -7,6 +7,8 @@ public class Hider : MonoBehaviour
     public Material[] material;
     public Renderer rend;
 
+    public Soundmanager sound;
+
 
     public Animator anim;
     public bool hid = false; 
@@ -29,9 +31,16 @@ public class Hider : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f))
         {
-            Material mat = hitdata.collider.gameObject.GetComponent<Renderer>().material;
-            rend.material = mat;
-            Debug.Log(mat);
+            if (hitdata.collider.gameObject.GetComponent<Renderer>() == null) rend.material = material[0];
+            else
+            {
+                Material mat = hitdata.collider.gameObject.GetComponent<Renderer>().material;
+
+                rend.material = mat;
+                Debug.Log(mat);
+            }
+
+           
         }
        
         if(Input.GetButtonDown("Fire2"))
@@ -50,9 +59,11 @@ public class Hider : MonoBehaviour
         if (hid)
         {
             anim.SetTrigger("out");
+            sound.bobble1();
         } else if (!hid)
         {
             anim.SetTrigger("in");
+            sound.bobble2();
         }
         
     }
