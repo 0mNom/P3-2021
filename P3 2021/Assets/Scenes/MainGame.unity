@@ -5393,6 +5393,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 737422946}
+    - target: {fileID: 1639563601, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
+      propertyPath: underSkin
+      value: 
+      objectReference: {fileID: 1869007760}
     - target: {fileID: 1639563602, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
       propertyPath: rb
       value: 
@@ -30253,6 +30257,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3289651702138068683, guid: 15ce32273e7fe6e4d94b15c2b5b534b3, type: 3}
   m_PrefabInstance: {fileID: 1866404360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1869007760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4052898542480152664, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
+  m_PrefabInstance: {fileID: 299732179}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1870375695
 GameObject:
@@ -62247,7 +62256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5928031932748563559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21226771, y: 0.53612196, z: -1.6624218}
+  m_LocalPosition: {x: -0.217, y: 0.53612196, z: -1.6624218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5929427228367855425}

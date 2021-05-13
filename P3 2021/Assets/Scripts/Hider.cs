@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Hider : MonoBehaviour
 {
+
+    public GameObject underSkin;
     public Material[] material;
     public Renderer rend;
 
@@ -17,7 +19,8 @@ public class Hider : MonoBehaviour
     {
       //  rend = GetComponent<Renderer>();
        // rend.enabled = true;
-        rend.sharedMaterial = material[0]; 
+        rend.sharedMaterial = material[0];
+        underSkin.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,9 +44,9 @@ public class Hider : MonoBehaviour
             }
 
            
-        }
-       
-        if(Input.GetButtonDown("Fire2"))
+        }else rend.material = material[0];
+
+        if (Input.GetButtonDown("Fire2"))
         {
             hide();
         }
@@ -58,16 +61,30 @@ public class Hider : MonoBehaviour
 
         if (hid)
         {
+            StartCoroutine("hidder");
             anim.SetTrigger("out");
             sound.bobble1();
+         
         } else if (!hid)
         {
+           
             anim.SetTrigger("in");
             sound.bobble2();
+            StartCoroutine("hidden");
         }
         
     }
 
+    IEnumerator hidden()
+    {
+        yield return new WaitForSeconds(1f);
+        underSkin.SetActive(false);
+    }
+    IEnumerator hidder()
+    {
+        yield return new WaitForSeconds(.5f);
+        underSkin.SetActive(true);
+    }
     /*private void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.position, transform.TransformDirection(Vector3.forward));
