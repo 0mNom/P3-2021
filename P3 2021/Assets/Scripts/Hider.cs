@@ -9,10 +9,14 @@ public class Hider : MonoBehaviour
     public Material[] material;
     public Renderer rend;
 
+    public string tag;
+
+
+
     public Soundmanager sound;
 
 
-    public Animator anim;
+    public Animator anim, AniTop, AniBottom;
     public bool hid = false; 
 
     void Start()
@@ -46,9 +50,12 @@ public class Hider : MonoBehaviour
            
         }else rend.material = material[0];
 
+
+
         if (Input.GetButtonDown("Fire2"))
         {
             hide();
+            tag = hitdata.collider.gameObject.tag;
         }
         
 
@@ -64,6 +71,17 @@ public class Hider : MonoBehaviour
             StartCoroutine("hidder");
             anim.SetTrigger("out");
             sound.bobble1();
+            if (tag == "coral") 
+            {
+                AniTop.SetTrigger("coral");
+                AniBottom.SetTrigger("coral");
+            } 
+            else
+            {
+                AniTop.SetTrigger("hide");
+                AniBottom.SetTrigger("hide");
+            }
+         
          
         } else if (!hid)
         {
@@ -71,6 +89,16 @@ public class Hider : MonoBehaviour
             anim.SetTrigger("in");
             sound.bobble2();
             StartCoroutine("hidden");
+            if (tag == "coral")
+            {
+                AniTop.SetTrigger("uncoral");
+                AniBottom.SetTrigger("uncoral");
+            }
+            else
+            {
+                AniTop.SetTrigger("unhide");
+                AniBottom.SetTrigger("unhide");
+            }
         }
         
     }
@@ -85,27 +113,5 @@ public class Hider : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         underSkin.SetActive(true);
     }
-    /*private void OnDrawGizmos()
-    {
-        Gizmos.DrawLine(transform.position, transform.TransformDirection(Vector3.forward));
-    }*/
-
-
-
-    /*
-     void OnCollisionEnter(Collision col)
-    {
-      if (col.gameObject.tag == "1")
-        {
-            //rend = this.GetComponent<Renderer>();
-            Debug.Log("grennn");
-            rend.sharedMaterial = material[1];
-        }
-        if (col.gameObject.tag == "2")
-        {
-            //rend = this.GetComponent<Renderer>();
-            Debug.Log("grennn");
-            rend.sharedMaterial = material[2];
-        }
-    }*/
+    
 }

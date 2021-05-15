@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 13882720}
   m_Layer: 0
   m_Name: Coral_007 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 56343171}
   m_Layer: 0
   m_Name: Coral_01 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2365,7 +2365,7 @@ GameObject:
   - component: {fileID: 130841620}
   m_Layer: 0
   m_Name: Coral_01 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2634,6 +2634,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3293,7 +3297,7 @@ GameObject:
   - component: {fileID: 184241315}
   m_Layer: 0
   m_Name: Coral_04 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3678,6 +3682,10 @@ PrefabInstance:
       value: Coral_04 (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -3773,6 +3781,10 @@ PrefabInstance:
     - target: {fileID: 1825723515433392, guid: b4a6c8d85b109ce47a8e7eed513e3362, type: 3}
       propertyPath: m_Name
       value: Coral_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825723515433392, guid: b4a6c8d85b109ce47a8e7eed513e3362, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1825723515433392, guid: b4a6c8d85b109ce47a8e7eed513e3362, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3874,7 +3886,7 @@ GameObject:
   - component: {fileID: 233347628}
   m_Layer: 0
   m_Name: Coral_007 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5124,7 +5136,7 @@ GameObject:
   - component: {fileID: 285731969}
   m_Layer: 0
   m_Name: Coral_008 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5302,87 +5314,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300020, guid: e8614f2c73c299f48ac4f9e1f095c8ca, type: 3}
---- !u!1001 &299732179
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1639563601, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: sound
-      value: 
-      objectReference: {fileID: 737422946}
-    - target: {fileID: 1639563601, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: underSkin
-      value: 
-      objectReference: {fileID: 1869007760}
-    - target: {fileID: 1639563602, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 582308911}
-    - target: {fileID: 1639563603, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_Radius
-      value: 0.96596146
-      objectReference: {fileID: 0}
-    - target: {fileID: 1639563603, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_Center.y
-      value: 0.622102
-      objectReference: {fileID: 0}
-    - target: {fileID: 1639563603, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_Center.z
-      value: -0.039232254
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_RootOrder
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.450001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.674788
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2878684232617888649, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3222594511532544307, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-      propertyPath: m_Name
-      value: octo1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
 --- !u!1001 &302180686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5393,6 +5324,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6504,6 +6439,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362282493}
   m_Mesh: {fileID: 4300064, guid: e8614f2c73c299f48ac4f9e1f095c8ca, type: 3}
+--- !u!1 &364387750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7709960704055023089, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
+  m_PrefabInstance: {fileID: 7709960704246384727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &364387752
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364387750}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78054db2c4723ff4cb4c779d09c9aff7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &365993383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7212,6 +7171,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8148,6 +8111,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9889,46 +9856,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &582308910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3222594511532544307, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-  m_PrefabInstance: {fileID: 299732179}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &582308911
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582308910}
-  serializedVersion: 2
-  m_Mass: 0.0000001
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 3
---- !u!95 &582308915
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582308910}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1b3fc80ec0846d6479ec53097db26cdf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &582992728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10027,6 +9954,10 @@ PrefabInstance:
     - target: {fileID: 5382426106367163648, guid: 73c9575866cbca741aef55ccb3838142, type: 3}
       propertyPath: m_Name
       value: coral 1 (col) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382426106367163648, guid: 73c9575866cbca741aef55ccb3838142, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 5382426106367163648, guid: 73c9575866cbca741aef55ccb3838142, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10215,6 +10146,10 @@ PrefabInstance:
       value: 10010_Coral_v1_L3 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
+      propertyPath: m_TagString
+      value: coral
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10377,6 +10312,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10562,6 +10501,10 @@ PrefabInstance:
     - target: {fileID: 5382426106367163648, guid: 73c9575866cbca741aef55ccb3838142, type: 3}
       propertyPath: m_Name
       value: coral 1 (col)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382426106367163648, guid: 73c9575866cbca741aef55ccb3838142, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 5382426106367163648, guid: 73c9575866cbca741aef55ccb3838142, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10866,6 +10809,10 @@ PrefabInstance:
       value: 10010_Coral_v1_L3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
+      propertyPath: m_TagString
+      value: coral
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10989,6 +10936,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
       propertyPath: m_Name
       value: 10010_Coral_v1_L3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11758,7 +11709,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &706866191
 PrefabInstance:
@@ -11822,6 +11773,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_Name
       value: 21488_Tree_Coral_v2_NEW 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11990,6 +11945,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13063,7 +13022,7 @@ GameObject:
   - component: {fileID: 808161328}
   m_Layer: 0
   m_Name: Coral_006 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14078,6 +14037,10 @@ PrefabInstance:
     - target: {fileID: 7313104265765346518, guid: b57563a63da004647a828599f8cdf48f, type: 3}
       propertyPath: m_Name
       value: coral 2 (col)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313104265765346518, guid: b57563a63da004647a828599f8cdf48f, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 7313104265765346518, guid: b57563a63da004647a828599f8cdf48f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15344,6 +15307,10 @@ PrefabInstance:
       value: Coral_04 (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15516,7 +15483,7 @@ GameObject:
   - component: {fileID: 946269793}
   m_Layer: 0
   m_Name: Coral_009 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15686,6 +15653,10 @@ PrefabInstance:
       value: 10010_Coral_v1_L3 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
+      propertyPath: m_TagString
+      value: coral
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 169b9b91c87b64c0283e87f7a261e99d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15769,7 +15740,7 @@ GameObject:
   - component: {fileID: 951339353}
   m_Layer: 0
   m_Name: Coral_009 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16222,7 +16193,7 @@ GameObject:
   - component: {fileID: 971782990}
   m_Layer: 0
   m_Name: Coral_006 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16400,7 +16371,7 @@ GameObject:
   - component: {fileID: 997126554}
   m_Layer: 0
   m_Name: Coral_006 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16625,6 +16596,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_Name
       value: 21488_Tree_Coral_v2_NEW 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17356,7 +17331,7 @@ GameObject:
   - component: {fileID: 1046063885}
   m_Layer: 0
   m_Name: Coral_03 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17472,6 +17447,10 @@ PrefabInstance:
     - target: {fileID: 7313104265765346518, guid: b57563a63da004647a828599f8cdf48f, type: 3}
       propertyPath: m_Name
       value: coral 2 (col) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313104265765346518, guid: b57563a63da004647a828599f8cdf48f, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 7313104265765346518, guid: b57563a63da004647a828599f8cdf48f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17702,6 +17681,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18307,7 +18290,7 @@ GameObject:
   - component: {fileID: 1116987876}
   m_Layer: 0
   m_Name: Coral_007 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18403,7 +18386,7 @@ GameObject:
   - component: {fileID: 1117617928}
   m_Layer: 0
   m_Name: Coral_04 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18993,7 +18976,7 @@ GameObject:
   - component: {fileID: 1184598675}
   m_Layer: 0
   m_Name: Coral_009 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19485,7 +19468,7 @@ GameObject:
   - component: {fileID: 1213079254}
   m_Layer: 0
   m_Name: Coral_006 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20125,7 +20108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239401933}
-  m_LocalRotation: {x: 0.11110735, y: -0.06997153, z: 0.007842494, w: 0.9913111}
+  m_LocalRotation: {x: 0.11110738, y: -0.069971554, z: 0.007842499, w: 0.9913111}
   m_LocalPosition: {x: -0.15162599, y: 3.919921, z: 14.603731}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -20405,7 +20388,7 @@ GameObject:
   - component: {fileID: 1252863007}
   m_Layer: 0
   m_Name: Coral_008 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20857,7 +20840,7 @@ GameObject:
   - component: {fileID: 1282078284}
   m_Layer: 0
   m_Name: Coral_008 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21356,6 +21339,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22498,7 +22485,7 @@ GameObject:
   - component: {fileID: 1408011358}
   m_Layer: 0
   m_Name: Coral_01 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22590,6 +22577,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22806,7 +22797,7 @@ GameObject:
   - component: {fileID: 1429978578}
   m_Layer: 0
   m_Name: Coral_03 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23543,7 +23534,7 @@ GameObject:
   - component: {fileID: 1451885153}
   m_Layer: 0
   m_Name: Coral_007 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24210,6 +24201,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26214,6 +26209,10 @@ PrefabInstance:
     - target: {fileID: 1474841516201142, guid: bf47be9fda50b744f86c67c66cb76908, type: 3}
       propertyPath: m_Name
       value: Coral_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474841516201142, guid: bf47be9fda50b744f86c67c66cb76908, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1474841516201142, guid: bf47be9fda50b744f86c67c66cb76908, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28605,7 +28604,7 @@ GameObject:
   - component: {fileID: 1823659008}
   m_Layer: 0
   m_Name: Coral_04 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29370,11 +29369,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3289651702138068683, guid: 15ce32273e7fe6e4d94b15c2b5b534b3, type: 3}
   m_PrefabInstance: {fileID: 1866404360}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1869007760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4052898542480152664, guid: 8fab5a15f800047a8bb413a780fc193d, type: 3}
-  m_PrefabInstance: {fileID: 299732179}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1870375695
 GameObject:
   m_ObjectHideFlags: 0
@@ -29785,7 +29779,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882704325}
-  m_LocalRotation: {x: 0.11110735, y: -0.06997153, z: 0.007842494, w: 0.9913111}
+  m_LocalRotation: {x: 0.11110738, y: -0.069971554, z: 0.007842499, w: 0.9913111}
   m_LocalPosition: {x: -0.15162599, y: 3.919921, z: 14.603731}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -29807,7 +29801,7 @@ GameObject:
   - component: {fileID: 1885196402}
   m_Layer: 0
   m_Name: Coral_01 (2)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30532,7 +30526,7 @@ GameObject:
   - component: {fileID: 1917251240}
   m_Layer: 0
   m_Name: Coral_03 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30724,7 +30718,7 @@ GameObject:
   - component: {fileID: 1923158719}
   m_Layer: 0
   m_Name: Coral_04 (3)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31275,6 +31269,10 @@ PrefabInstance:
       value: 21488_Tree_Coral_v2_NEW 1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
+      propertyPath: m_TagString
+      value: coral
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -31749,7 +31747,7 @@ GameObject:
   - component: {fileID: 1965816539}
   m_Layer: 0
   m_Name: Coral_008 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31841,6 +31839,10 @@ PrefabInstance:
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_Name
       value: Coral_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 1446398813875114, guid: 0e694479a50df794491d4b97f42b2b16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32399,7 +32401,7 @@ GameObject:
   - component: {fileID: 1997789489}
   m_Layer: 0
   m_Name: Coral_009 (1)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32946,7 +32948,7 @@ GameObject:
   - component: {fileID: 2010651701}
   m_Layer: 0
   m_Name: Coral_03 (4)
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33139,6 +33141,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_Name
       value: 21488_Tree_Coral_v2_NEW 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
+      propertyPath: m_TagString
+      value: coral
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6422a2ebed4c4ccdbfe15792df6039f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33579,7 +33585,7 @@ GameObject:
   - component: {fileID: 2042580142}
   m_Layer: 0
   m_Name: Coral
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35559,7 +35565,7 @@ GameObject:
   - component: {fileID: 1163564626698890}
   m_Layer: 0
   m_Name: Coral_02
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35844,7 +35850,7 @@ GameObject:
   - component: {fileID: 1285653710756138}
   m_Layer: 0
   m_Name: Coral_009
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36162,7 +36168,7 @@ GameObject:
   - component: {fileID: 1427255805484018}
   m_Layer: 0
   m_Name: Coral_03
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36228,7 +36234,7 @@ GameObject:
   - component: {fileID: 1454796414715048}
   m_Layer: 0
   m_Name: Coral_006
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36516,7 +36522,7 @@ GameObject:
   - component: {fileID: 1504720415981126}
   m_Layer: 0
   m_Name: Coral_01
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36954,7 +36960,7 @@ GameObject:
   - component: {fileID: 1658788019727834}
   m_Layer: 0
   m_Name: Coral_008
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37306,7 +37312,7 @@ GameObject:
   - component: {fileID: 1792093208762008}
   m_Layer: 0
   m_Name: Coral_007
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37357,7 +37363,7 @@ GameObject:
   - component: {fileID: 1802119321378722}
   m_Layer: 0
   m_Name: Coral_04
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43893,6 +43899,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658788019727833}
   m_Mesh: {fileID: 4300050, guid: e8614f2c73c299f48ac4f9e1f095c8ca, type: 3}
+--- !u!95 &186061661011495098 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7523912375154196717, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
+  m_PrefabInstance: {fileID: 7709960704246384727}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450653195663412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5304206694146806873, guid: 9743b58e59d2b48b48d88a29214f5b6a, type: 3}
@@ -48886,7 +48897,7 @@ GameObject:
   - component: {fileID: 3765103863354214616}
   m_Layer: 0
   m_Name: Coral_007
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48988,7 +48999,7 @@ GameObject:
   - component: {fileID: 3765129003234443746}
   m_Layer: 0
   m_Name: Coral_04
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49609,7 +49620,7 @@ GameObject:
   - component: {fileID: 3765618024305818826}
   m_Layer: 0
   m_Name: Coral_02
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49897,7 +49908,7 @@ GameObject:
   - component: {fileID: 3765742311859472234}
   m_Layer: 0
   m_Name: Coral_009
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -50179,7 +50190,7 @@ GameObject:
   - component: {fileID: 3765882237262431666}
   m_Layer: 0
   m_Name: Coral_03
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -50212,7 +50223,7 @@ GameObject:
   - component: {fileID: 3765889743711378152}
   m_Layer: 0
   m_Name: Coral_006
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -50515,7 +50526,7 @@ GameObject:
   - component: {fileID: 3765945440480026630}
   m_Layer: 0
   m_Name: Coral_01
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -50971,7 +50982,7 @@ GameObject:
   - component: {fileID: 3766116829351474074}
   m_Layer: 0
   m_Name: Coral_008
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57964,7 +57975,7 @@ GameObject:
   - component: {fileID: 5927117158803115126}
   m_Layer: 0
   m_Name: Coral_007
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58063,7 +58074,7 @@ GameObject:
   - component: {fileID: 5927127735661462852}
   m_Layer: 0
   m_Name: Coral_04
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58516,7 +58527,7 @@ GameObject:
   - component: {fileID: 5927324617336406292}
   m_Layer: 0
   m_Name: Coral_03
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58618,7 +58629,7 @@ GameObject:
   - component: {fileID: 5927352148937203270}
   m_Layer: 0
   m_Name: Coral_006
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58900,7 +58911,7 @@ GameObject:
   - component: {fileID: 5927402074347709608}
   m_Layer: 0
   m_Name: Coral_01
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59320,7 +59331,7 @@ GameObject:
   - component: {fileID: 5927547353071728444}
   m_Layer: 0
   m_Name: Coral_008
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59602,7 +59613,7 @@ GameObject:
   - component: {fileID: 5927623318939547756}
   m_Layer: 0
   m_Name: Coral_02
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59917,7 +59928,7 @@ GameObject:
   - component: {fileID: 5927745407872533452}
   m_Layer: 0
   m_Name: Coral_009
-  m_TagString: Untagged
+  m_TagString: coral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61974,10 +61985,26 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 737422946}
+    - target: {fileID: 7523912375154196713, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
+      propertyPath: AniTop
+      value: 
+      objectReference: {fileID: 186061661011495098}
+    - target: {fileID: 7523912375154196713, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
+      propertyPath: AniBottom
+      value: 
+      objectReference: {fileID: 364387752}
+    - target: {fileID: 7523912375154196714, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 186061661011495098}
     - target: {fileID: 7523912375154196718, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
       propertyPath: m_Name
       value: octoAnim6
       objectReference: {fileID: 0}
+    - target: {fileID: 7709960704391867209, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 78054db2c4723ff4cb4c779d09c9aff7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1470cdbe9f621f84a95568dda5fd8bab, type: 3}
 --- !u!1 &8212050817226297818
