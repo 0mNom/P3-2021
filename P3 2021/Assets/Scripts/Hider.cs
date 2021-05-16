@@ -112,6 +112,17 @@ public class Hider : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         underSkin.SetActive(true);
+        if (tag == "coral")
+        {
+            AniTop.SetTrigger("coral");
+            AniBottom.SetTrigger("coral");
+        }
+        else
+        {
+            AniTop.SetTrigger("hide");
+            AniBottom.SetTrigger("hide");
+        }
+
     }
     
 }
