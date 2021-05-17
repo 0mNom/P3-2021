@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hider : MonoBehaviour
 {
 
-    public GameObject underSkin;
+    public GameObject underSkin, CamMove, CamHide;
     public Material[] material;
     public Renderer rend;
 
@@ -25,6 +25,8 @@ public class Hider : MonoBehaviour
        // rend.enabled = true;
        // rend.sharedMaterial = material[0];
         underSkin.SetActive(false);
+        CamMove.SetActive(true);
+        CamHide.SetActive(false);
     }
 
     // Update is called once per frame
@@ -65,6 +67,8 @@ public class Hider : MonoBehaviour
     {
         Debug.Log("i'm hidinnngggg");
         hid = !hid;
+        CamMove.SetActive(false);
+        CamHide.SetActive(true);
 
         if (hid)
         {
@@ -89,6 +93,8 @@ public class Hider : MonoBehaviour
             anim.SetTrigger("in");
             sound.bobble2();
             StartCoroutine("hidden");
+            CamMove.SetActive(true);
+            CamHide.SetActive(false);
             if (tag == "coral")
             {
                 AniTop.SetTrigger("uncoral");
