@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - coral
+  - Hider
+  - Seeker
   layers:
   - Default
   - TransparentFX
