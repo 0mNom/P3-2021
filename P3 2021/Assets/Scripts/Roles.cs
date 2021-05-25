@@ -9,10 +9,7 @@ public class Roles : MonoBehaviour
     public Seeker seek;
     void Start()
     {
-        tagg = gameObject.tag;
-        Debug.Log(tagg);
-        if (tagg == "Hider") hide.enabled = true;
-        if (tagg == "Seeker") seek.enabled = true;
+       
         
     }
 
@@ -20,5 +17,13 @@ public class Roles : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void roleUp()
+    {
+        tagg = gameObject.tag;
+        Debug.Log(tagg);
+        if (tagg == "Hider") hide.enabled = true;
+        if (tagg == "Seeker") seek.enabled = true;
     }
 }

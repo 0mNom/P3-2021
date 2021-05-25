@@ -8,9 +8,10 @@ public class Seeker : MonoBehaviour
     public GameObject cam;
     void Start()
     {
+        
+        StartCoroutine("find");
         gameObject.SetActive(false);
         cam.SetActive(false);
-        StartCoroutine("find");
 
     }
 

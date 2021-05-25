@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Hider : MonoBehaviour
 {
 
-    public GameObject underSkin, CamMove, CamHidek, CamHidec, CamHide;
+    public GameObject underSkin, hat, CamMove, CamHidek, CamHidec, CamHide;
     public Material[] material;
     public Renderer rend;
+   public Outline oldout;
 
     public Mesh meshNew, MeshOCTO;
     public SkinnedMeshRenderer mRend;
@@ -24,6 +26,7 @@ public class Hider : MonoBehaviour
 
     void Start()
     {
+        gameObject.SetActive(true);
       //  rend = GetComponent<Renderer>();
        // rend.enabled = true;
        // rend.sharedMaterial = material[0];
@@ -36,60 +39,44 @@ public class Hider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*RaycastHit hitdata; 
-         
-        Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),out hitdata, 5f);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward)*5, Color.green);
-       // Debug.Log(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f));
+        RaycastHit hitdata;
+
+        Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f);
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5, Color.green);
+        // Debug.Log(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f));
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitdata, 5f))
         {
-            if (hitdata.collider.gameObject.GetComponent<Renderer>() == null) rend.material = material[0];
+            if (hitdata.collider.gameObject.GetComponent<Outline>() == null) oldout.enabled= false;
             else
             {
-                Material mat = hitdata.collider.gameObject.GetComponent<Renderer>().material;
-
-                rend.material = mat;
-               // Debug.Log(mat);
-            }
-
-            if (hitdata.collider.gameObject.GetComponent<MeshFilter>() == null)
-            {
-                mRend.sharedMesh = MeshOCTO;
-               
-                Debug.Log("nop");
+                oldout.enabled = false;
+                oldout = hitdata.collider.gameObject.GetComponent<Outline>();
+                oldout.enabled = true;
                
             }
-            else
-            {
-                meshNew = hitdata.collider.gameObject.GetComponent<MeshFilter>().mesh;
-                underSkin.GetComponent<Transform>().localScale = hitdata.collider.gameObject.GetComponent<Transform>().localScale;
-                mRend.sharedMesh = meshNew;
-                Debug.Log(meshNew);
-            }
+
+
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5, Color.green);
+
+            
 
 
         }
-        else rend.material = material[0];*/
-
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5, Color.green);
-
         if (Input.GetButtonDown("Fire2K"))
         {
             CamHide = CamHidek;
             hide();
-            
+
             Debug.Log("KeyCAm");
         }
         if (Input.GetButtonDown("Fire2C"))
         {
             CamHide = CamHidec;
             hide();
-            
+
             Debug.Log("ConCAm");
         }
-        
-
     }
 
     public void hide()
@@ -114,18 +101,21 @@ public class Hider : MonoBehaviour
                 // Debug.Log(mat);
             }
 
-            if (hitdata.collider.gameObject.GetComponent<MeshFilter>() == null)
+            if (hitdata.collider.gameObject == null)
             {
                 mRend.sharedMesh = MeshOCTO;
+                //underSkin.GetComponent<Transform>().localScale = Vector3.zero;
 
                 Debug.Log("nop");
 
             }
             else
             {
+
+                //underSkin.GetComponent<Transform>().localScale=Vector3.zero;
                 meshNew = hitdata.collider.gameObject.GetComponent<MeshFilter>().mesh;
-                underSkin.GetComponent<Transform>().localScale = hitdata.collider.gameObject.GetComponent<Transform>().localScale;
-                mRend.sharedMesh = meshNew;
+                //underSkin.GetComponent<Transform>().DOScale(hitdata.collider.gameObject.GetComponent<Transform>().localScale, 1f);
+               // mRend.sharedMesh = meshNew;
                 Debug.Log(meshNew);
             }
 
@@ -136,40 +126,29 @@ public class Hider : MonoBehaviour
 
         if (hid)
         {
-            StartCoroutine("hidder");
+           // StartCoroutine("hidder");
             anim.SetTrigger("out");
             sound.bobble1();
-           
-            if (tag == "coral") 
-            {
-                AniTop.SetTrigger("coral");
-                AniBottom.SetTrigger("coral");
-            } 
-            else
-            {
-                AniTop.SetTrigger("hide");
-                AniBottom.SetTrigger("hide");
-            }
-         
-         
+            underSkin.SetActive(true);
+            hat.GetComponent<Transform>().DOScale(Vector3.zero, 1f);
+            underSkin.GetComponent<Transform>().DOScale(hitdata.collider.gameObject.GetComponent<Transform>().localScale, 1f);
+            mRend.sharedMesh = meshNew;
+
+
+
+
         } else if (!hid)
         {
            
             anim.SetTrigger("in");
             sound.bobble2();
+            hat.GetComponent<Transform>().DOScale(new Vector3(100,100,100), 1f);
+            underSkin.GetComponent<Transform>().DOScale(Vector3.zero, 1f);
+            //underSkin.SetActive(false);
             StartCoroutine("hidden");
             CamMove.SetActive(true);
             CamHide.SetActive(false);
-            if (tag == "coral")
-            {
-                AniTop.SetTrigger("uncoral");
-                AniBottom.SetTrigger("uncoral");
-            }
-            else
-            {
-                AniTop.SetTrigger("unhide");
-                AniBottom.SetTrigger("unhide");
-            }
+            
         }
         
     }
@@ -183,16 +162,7 @@ public class Hider : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         underSkin.SetActive(true);
-        if (tag == "coral")
-        {
-            AniTop.SetTrigger("coral");
-            AniBottom.SetTrigger("coral");
-        }
-        else
-        {
-            AniTop.SetTrigger("hide");
-            AniBottom.SetTrigger("hide");
-        }
+        
 
     }
     
