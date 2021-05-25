@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1856856284838545326}
   - component: {fileID: 7517578341476933416}
   - component: {fileID: 4051203042079803249}
+  - component: {fileID: 2642689335450457611}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -124,6 +125,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000005, y: 0.020412287, z: 0.025280287}
   m_Center: {x: 0.00000092908283, y: 0.00020630112, z: -0.21850231}
+--- !u!114 &2642689335450457611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902450105250388107}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.9811321, g: 0.86515296, b: 0.6062656, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &6243323086459213758
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +187,7 @@ GameObject:
   - component: {fileID: 1161287715465122474}
   - component: {fileID: 4149591172975238192}
   - component: {fileID: 4659230424347180604}
+  - component: {fileID: 6859896410093455603}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -252,3 +272,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2534964839176971238, guid: d9a050aa245cec841a667a0613c679a5, type: 3}
+--- !u!114 &6859896410093455603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556194703241356527}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.9811321, g: 0.86515296, b: 0.6062656, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
