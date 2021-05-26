@@ -28,4 +28,9 @@ public class UI : MonoBehaviour
         octo2.tag = "Hider";
         octo1.tag = "Seeker";
     }
+
+    public void bye()
+    {
+        Application.Quit();
+    }
 }

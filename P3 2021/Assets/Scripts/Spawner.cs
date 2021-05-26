@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour {
             Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
             Boid ob = prefabs[Random.Range(0, prefabs.Length)];
             Boid boid = Instantiate (ob);
-            Debug.Log(ob);
+            //Debug.Log(ob);
             boid.transform.position = pos;
             boid.transform.forward = Random.insideUnitSphere;
 

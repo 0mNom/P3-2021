@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class Hider : MonoBehaviour
 {
 
-    public GameObject underSkin, hat, CamMove, CamHidek, CamHidec, CamHide;
+    public GameObject underSkin, undersphere, hat, CamMove, CamHidek, CamHidec, CamHide;
     public Material[] material;
     public Renderer rend;
    public Outline oldout;
@@ -16,13 +17,17 @@ public class Hider : MonoBehaviour
 
     public string tag;
 
+    public RectTransform timerr;
+
 
 
     public Soundmanager sound;
 
 
     public Animator anim, AniTop, AniBottom;
-    public bool hid = false; 
+    public bool hid = false;
+
+    public HealthBarJuice bar;
 
     void Start()
     {
@@ -34,6 +39,8 @@ public class Hider : MonoBehaviour
         CamMove.SetActive(true);
         CamHidec.SetActive(false);
         CamHidek.SetActive(false);
+        StartCoroutine("timer");
+        bar.StartJuice();
     }
 
     // Update is called once per frame
@@ -63,19 +70,20 @@ public class Hider : MonoBehaviour
 
 
         }
+        else oldout.enabled = false;
         if (Input.GetButtonDown("Fire2K"))
         {
             CamHide = CamHidek;
             hide();
 
-            Debug.Log("KeyCAm");
+           // Debug.Log("KeyCAm");
         }
         if (Input.GetButtonDown("Fire2C"))
         {
             CamHide = CamHidec;
             hide();
 
-            Debug.Log("ConCAm");
+           // Debug.Log("ConCAm");
         }
     }
 
@@ -106,7 +114,7 @@ public class Hider : MonoBehaviour
                 mRend.sharedMesh = MeshOCTO;
                 //underSkin.GetComponent<Transform>().localScale = Vector3.zero;
 
-                Debug.Log("nop");
+                //Debug.Log("nop");
 
             }
             else
@@ -116,7 +124,7 @@ public class Hider : MonoBehaviour
                 meshNew = hitdata.collider.gameObject.GetComponent<MeshFilter>().mesh;
                 //underSkin.GetComponent<Transform>().DOScale(hitdata.collider.gameObject.GetComponent<Transform>().localScale, 1f);
                // mRend.sharedMesh = meshNew;
-                Debug.Log(meshNew);
+               // Debug.Log(meshNew);
             }
 
 
@@ -133,6 +141,9 @@ public class Hider : MonoBehaviour
             hat.GetComponent<Transform>().DOScale(Vector3.zero, 1f);
             underSkin.GetComponent<Transform>().DOScale(hitdata.collider.gameObject.GetComponent<Transform>().localScale, 1f);
             mRend.sharedMesh = meshNew;
+            undersphere.GetComponent<MeshCollider>().sharedMesh = null;
+            undersphere.GetComponent<MeshCollider>().sharedMesh = meshNew;
+            
 
 
 
@@ -162,6 +173,16 @@ public class Hider : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         underSkin.SetActive(true);
+        
+
+    }
+    
+    IEnumerator timer()
+    {
+        yield return new WaitForSeconds(20f);
+        timerr.DOScale(0, 2f);
+       
+       
         
 
     }
