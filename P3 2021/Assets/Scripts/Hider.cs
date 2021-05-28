@@ -19,7 +19,7 @@ public class Hider : MonoBehaviour
 
     public RectTransform timerr;
 
-
+    public bool wave, WAVING,run;
 
     public Soundmanager sound;
 
@@ -28,6 +28,9 @@ public class Hider : MonoBehaviour
     public bool hid = false;
 
     public HealthBarJuice bar;
+
+
+    private Vector3 velocity = new Vector3(1,0,1);
 
     void Start()
     {
@@ -39,8 +42,9 @@ public class Hider : MonoBehaviour
         CamMove.SetActive(true);
         CamHidec.SetActive(false);
         CamHidek.SetActive(false);
-        StartCoroutine("timer");
-        bar.StartJuice();
+        
+       // bar.StartJuice();
+       StartCoroutine("wavee");
     }
 
     // Update is called once per frame
@@ -85,6 +89,27 @@ public class Hider : MonoBehaviour
 
            // Debug.Log("ConCAm");
         }
+
+        if (WAVING)
+        {
+            Vector3 NEW = transform.position + new Vector3(1, 0, 1);
+            if (wave)
+            {
+
+                gameObject.transform.position = Vector3.SmoothDamp(transform.position, NEW, ref velocity, 2f);
+                Debug.Log("Going");
+            }
+            else
+            {
+                NEW = transform.position + new Vector3(-1, 0, -1);
+                gameObject.transform.position = Vector3.SmoothDamp(transform.position, NEW, ref velocity, 2f);
+            }
+        }
+
+        if (!run) StartCoroutine("waving");
+       
+
+        
     }
 
     public void hide()
@@ -126,7 +151,10 @@ public class Hider : MonoBehaviour
                // mRend.sharedMesh = meshNew;
                // Debug.Log(meshNew);
             }
+            
 
+           
+          
 
         }
         else rend.material = material[0];
@@ -140,6 +168,10 @@ public class Hider : MonoBehaviour
             underSkin.SetActive(true);
             hat.GetComponent<Transform>().DOScale(Vector3.zero, 1f);
             underSkin.GetComponent<Transform>().DOScale(hitdata.collider.gameObject.GetComponent<Transform>().localScale, 1f);
+            underSkin.GetComponent<Transform>().DORotateQuaternion(hitdata.collider.gameObject.GetComponent<Transform>().localRotation, 1f);
+               
+            //underSkin.GetComponent<Transform>().rotation = hitdata.collider.gameObject.GetComponent<Transform>().localRotation ;
+               
             mRend.sharedMesh = meshNew;
             undersphere.GetComponent<MeshCollider>().sharedMesh = null;
             undersphere.GetComponent<MeshCollider>().sharedMesh = meshNew;
@@ -176,15 +208,38 @@ public class Hider : MonoBehaviour
         
 
     }
+    public void startTIME()
+    {
+       // StartCoroutine("timer");
+    }
     
     IEnumerator timer()
     {
         yield return new WaitForSeconds(20f);
         timerr.DOScale(0, 2f);
-       
-       
-        
 
     }
-    
+     IEnumerator waving()
+    {
+        run = true;
+        yield return new WaitForSeconds(15f);
+        WAVING = true;
+        StartCoroutine("wavee");
+        run = false;
+
+    }
+
+    IEnumerator wavee()
+    {
+
+        yield return new WaitForSeconds(3f);
+        wave = true;
+        yield return new WaitForSeconds(3f);
+        wave = false;
+  
+        WAVING = false;
+
+
+    }
+
 }

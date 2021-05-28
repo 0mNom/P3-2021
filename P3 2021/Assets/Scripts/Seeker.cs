@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class Seeker : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject cam, otherOcto, otherOctoCam;
+    public GameObject cam, otherOcto, otherOctoCam, otherOctoCam2;
     public SkinnedMeshRenderer Skin;
     public MeshRenderer Hat;
     public Outline outt;
     public Mesh OCTOMESH;
+    public Image found;
 
     void Start()
     {
         
-        StartCoroutine("find");
+       // StartCoroutine("find");
         Skin.enabled = false;
         Hat.enabled = false;
         //gameObject.SetActive(false);
@@ -42,7 +45,8 @@ public class Seeker : MonoBehaviour
                     outt = hitdata.collider.gameObject.GetComponentInChildren<Outline>();
                     outt.enabled = true;
                     Debug.Log("found you");
-                   // hitdata.collider.gameObject.GetComponent<SkinnedMeshRenderer>().sharedMesh = OCTOMESH;
+                    // hitdata.collider.gameObject.GetComponent<SkinnedMeshRenderer>().sharedMesh = OCTOMESH;
+                    found.rectTransform.DOMove(new Vector3(950, 500, 0), 2f);
                 }
 
                 
@@ -52,6 +56,20 @@ public class Seeker : MonoBehaviour
 
         }
         
+    }
+
+    public void finding()
+    {
+        Skin.enabled = true;
+        Hat.enabled = true;
+        // gameObject.SetActive(true);
+        cam.SetActive(true);
+        // otherOcto.SetActive(false);
+        //otherOcto.GetComponent<Hider>().enabled = false ;
+        otherOcto.GetComponent<Controlz>().enabled = false;
+        otherOctoCam.SetActive(false);
+        otherOctoCam2.SetActive(false);
+        Debug.Log("im coming to find youuuuu");
     }
 
 
@@ -64,10 +82,12 @@ public class Seeker : MonoBehaviour
        // gameObject.SetActive(true);
         cam.SetActive(true);
         // otherOcto.SetActive(false);
-        otherOcto.GetComponent<Hider>().enabled = false ;
+        //otherOcto.GetComponent<Hider>().enabled = false ;
         otherOcto.GetComponent<Controlz>().enabled = false ;
         otherOctoCam.SetActive(false);
+        otherOctoCam2.SetActive(false);
         Debug.Log("im coming to find youuuuu");
+
 
         
 
