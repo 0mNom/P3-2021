@@ -82,7 +82,7 @@ public class Seeker : MonoBehaviour
        // gameObject.SetActive(true);
         cam.SetActive(true);
         // otherOcto.SetActive(false);
-        //otherOcto.GetComponent<Hider>().enabled = false ;
+        otherOcto.GetComponent<Hider>().enabled = false ;
         otherOcto.GetComponent<Controlz>().enabled = false ;
         otherOctoCam.SetActive(false);
         otherOctoCam2.SetActive(false);

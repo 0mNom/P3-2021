@@ -15,12 +15,11 @@ public class Hider : MonoBehaviour
     public Mesh meshNew, MeshOCTO;
     public SkinnedMeshRenderer mRend;
 
-    public string tag;
+    //public string tag;
 
     public RectTransform timerr;
 
-    public bool wave, WAVING,run;
-
+   
     public Soundmanager sound;
 
 
@@ -30,7 +29,7 @@ public class Hider : MonoBehaviour
     public HealthBarJuice bar;
 
 
-    private Vector3 velocity = new Vector3(1,0,1);
+   
 
     void Start()
     {
@@ -90,23 +89,7 @@ public class Hider : MonoBehaviour
            // Debug.Log("ConCAm");
         }
 
-        if (WAVING)
-        {
-            Vector3 NEW = transform.position + new Vector3(1, 0, 1);
-            if (wave)
-            {
-
-                gameObject.transform.position = Vector3.SmoothDamp(transform.position, NEW, ref velocity, 2f);
-                Debug.Log("Going");
-            }
-            else
-            {
-                NEW = transform.position + new Vector3(-1, 0, -1);
-                gameObject.transform.position = Vector3.SmoothDamp(transform.position, NEW, ref velocity, 2f);
-            }
-        }
-
-        if (!run) StartCoroutine("waving");
+        
        
 
         
@@ -151,9 +134,7 @@ public class Hider : MonoBehaviour
                // mRend.sharedMesh = meshNew;
                // Debug.Log(meshNew);
             }
-            
-
-           
+        
           
 
         }
@@ -219,27 +200,6 @@ public class Hider : MonoBehaviour
         timerr.DOScale(0, 2f);
 
     }
-     IEnumerator waving()
-    {
-        run = true;
-        yield return new WaitForSeconds(15f);
-        WAVING = true;
-        StartCoroutine("wavee");
-        run = false;
-
-    }
-
-    IEnumerator wavee()
-    {
-
-        yield return new WaitForSeconds(3f);
-        wave = true;
-        yield return new WaitForSeconds(3f);
-        wave = false;
-  
-        WAVING = false;
-
-
-    }
+    
 
 }
